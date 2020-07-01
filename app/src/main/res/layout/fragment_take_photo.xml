@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/takePhotoFrgment"
+    tools:context=".Fragments.TakePhotoFragment">
+
+  <!-- TODO: Update blank fragment layout -->
+  <LinearLayout
+      android:id="@+id/llMain"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:alpha="0.8"
+      android:layout_gravity="center"
+      >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+      <ImageView
+          android:id="@+id/img_camera"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:background="@drawable/camera"
+          android:layout_gravity="center"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Take your photo with camera"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="capture"
+        android:background="@color/yellow"
+        android:id="@+id/btn_camera"
+        />
+
+  </LinearLayout>
+
+</FrameLayout>

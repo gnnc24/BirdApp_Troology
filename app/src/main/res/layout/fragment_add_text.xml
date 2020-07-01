@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/addTextFragment"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddTextFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/relativeMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/reliveLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/recycler_selectText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@color/selectedOrange"
+                android:layout_marginRight="120dp"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/reliveLeft"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btn_Done"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:background="@color/colorOrange"
+                android:text="Done" />
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout
+              android:id="@+id/relativeleft"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="20dp"
+
+              android:background="@drawable/backgronds"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+
+
+              <RelativeLayout
+                  android:id="@+id/relativeSpinner"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                 >
+
+                  <Spinner
+                      android:id="@+id/spinner_State"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:backgroundTint="@color/black"
+                      android:dropDownWidth="match_parent"
+                      android:dropDownVerticalOffset="200dp"
+                      android:overlapAnchor="false"
+
+                      android:textAlignment="center" />
+
+
+              </RelativeLayout>
+            <ListView
+                android:id="@+id/recycler_selectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeSpinner" />
+          </RelativeLayout>
+ -->
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>

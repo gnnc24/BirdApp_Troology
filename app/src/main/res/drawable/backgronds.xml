@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+
+            <!-- "shadow" -->
+            <item android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <!-- <solid android:color="#FFFFFF" />-->
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+
+
+            <item android:top="3dp">
+
+                <shape android:bottom="4dp" android:left="7dp" android:right="7dp" android:top="10dp">
+                    <gradient android:angle="90" android:endColor="#FDFFFD" android:startColor="#FFFFFF" />
+                    <stroke android:width="1dp" android:color="#030303" />
+                    <corners android:radius="6dp" />
+                    <padding android:bottom="4dp" android:left="7dp" android:right="7dp" android:top="10dp" />
+
+
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+
+            <!-- "shadow" -->
+            <item android:top="3dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#FCFDFD" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+
+
+            <item android:bottom="3dp">
+                <shape>
+                    <gradient android:angle="90" android:endColor="#fff" android:startColor="#fff" />
+                    <stroke android:width="1dp" android:color="#070707" />
+                    <corners android:radius="6dp" />
+                    <padding android:bottom="7dp" android:left="7dp" android:right="7dp" android:top="7dp" />
+
+
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+
+</selector>

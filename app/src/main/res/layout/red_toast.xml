@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rel_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/error_custom_toast"
+        >
+
+    <ImageView
+        android:id="@+id/status_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="5dp"
+        android:src="@drawable/red_error_icon" />
+
+    <TextView
+        android:id="@+id/error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/status_icon"
+        android:layout_toEndOf="@+id/status_icon"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+</RelativeLayout>
+
+</LinearLayout>
